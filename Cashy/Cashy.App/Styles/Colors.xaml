@@ -16,6 +16,25 @@
 
     <Color x:Key="ForegroundWhite">#ffffff</Color>
     <SolidColorBrush x:Key="ForegroundWhiteBrush" Color="{StaticResource ForegroundWhite}"/>
-    
+
+
+    <Color x:Key="ForegroundDark">#bdbdbd</Color>
+    <SolidColorBrush x:Key="ForegroundDarkBrush" Color="{StaticResource ForegroundDark}"/>
+
+    <Color x:Key="CashyBlue">#0088ff</Color>
+    <SolidColorBrush x:Key="CashyBlueBrush" Color="{StaticResource CashyBlue}"/>
+
+    <Color x:Key="CashyLightOrange">#ffaa00</Color>
+    <SolidColorBrush x:Key="CashyLightOrangeBrush" Color="{StaticResource CashyLightOrange}"/>
+
+    <Color x:Key="CashyDarkOrange">#ff7700</Color>
+    <SolidColorBrush x:Key="CashyDarkOrangeBrush" Color="{StaticResource CashyDarkOrange}"/>
+
+    <Color x:Key="CashyLightGreen">#aadd22</Color>
+    <SolidColorBrush x:Key="CashyLightGreenBrush" Color="{StaticResource CashyLightGreen}"/>
+
+    <Color x:Key="CashyRed">#ff0033</Color>
+    <SolidColorBrush x:Key="CashyRedBrush" Color="{StaticResource CashyRed}"/>
+
 
 </ResourceDictionary>
