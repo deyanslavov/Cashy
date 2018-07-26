@@ -49,3 +49,4 @@ E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.App\obj\Debug\Cashy.App.csproj.Gener
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.App\obj\Debug\Cashy.App.csproj.CoreCompileInputs.cache
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.App\obj\Debug\Cashy.App.exe
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.App\obj\Debug\Cashy.App.pdb
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.App\obj\Debug\Cashy.App.csprojResolveAssemblyReference.cache
