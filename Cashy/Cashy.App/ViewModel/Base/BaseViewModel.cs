@@ -1,4 +1,4 @@
-﻿namespace Cashy.App.ViewModel
+﻿namespace Cashy.App
 {
     using PropertyChanged;
     using System.ComponentModel;

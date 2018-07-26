@@ -1,15 +1,10 @@
-﻿using Cashy.App.DataModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Input;
-
-namespace Cashy.App.ViewModel
+﻿namespace Cashy.App
 {
+    using System;
+    using System.Runtime.InteropServices;
+    using System.Windows;
+    using System.Windows.Input;
+
     /// <summary>
     /// Thew View Model for the custom flat window
     /// </summary>

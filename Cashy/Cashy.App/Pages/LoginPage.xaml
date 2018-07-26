@@ -1,12 +1,12 @@
-﻿<Page x:Class="Cashy.App.Pages.LoginPage"
+﻿<Page x:Class="Cashy.App.LoginPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Cashy.App.Pages"
+      xmlns:local="clr-namespace:Cashy.App"
       mc:Ignorable="d" 
       d:DesignHeight="690" d:DesignWidth="690"
-      Title="LoginPage">
+      Title="LoginPage"> 
 
     <Border Background="YellowGreen">
         <Grid>
@@ -48,7 +48,7 @@
                             <TextBox Tag="Email" Style="{StaticResource TextBoxPlaceholder}"/>
 
                             <!-- Password -->
-                            <TextBox Tag="Password" Style="{StaticResource TextBoxPlaceholder}"/>
+                            <PasswordBox Tag="Password" Style="{StaticResource PasswordBoxStyle}"/>
 
                             <!-- Next button -->
                             <Button Style="{StaticResource LoginPageButtonsStyle}" Content="Next" HorizontalAlignment="Center" />

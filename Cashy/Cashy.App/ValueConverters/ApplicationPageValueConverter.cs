@@ -4,8 +4,7 @@
     using System.Diagnostics;
     using System.Globalization;
 
-    using Cashy.App.DataModels;
-    using Cashy.App.Pages;
+    using Cashy.App;
 
     /// <summary>
     /// Converts the <see cref="ApplicationPage"/> to actual view/page

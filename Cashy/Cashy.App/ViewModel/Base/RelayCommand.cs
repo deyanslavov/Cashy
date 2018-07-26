@@ -1,4 +1,4 @@
-﻿namespace Cashy.App.ViewModel
+﻿namespace Cashy.App
 {
     using System;
     using System.Windows.Input;

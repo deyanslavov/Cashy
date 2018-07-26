@@ -1,4 +1,4 @@
-﻿namespace Cashy.App.DataModels
+﻿namespace Cashy.App
 {
     /// <summary>
     /// A page of the application
