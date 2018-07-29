@@ -8,11 +8,11 @@
       d:DesignHeight="690" d:DesignWidth="690"
       Title="LoginPage"> 
 
-    <Border Background="YellowGreen">
-        <Grid>
+    <!--<Border Background="YellowGreen">-->
+        <!--<Grid>-->
 
             <!-- Main content scroll -->
-            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
+            <!--<ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
                 <ScrollViewer.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -20,7 +20,7 @@
                         <RotateTransform Angle="-0.313"/>
                         <TranslateTransform/>
                     </TransformGroup>
-                </ScrollViewer.RenderTransform>
+                </ScrollViewer.RenderTransform>-->
                 <StackPanel
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center"
@@ -51,14 +51,16 @@
                             <PasswordBox Tag="Password" Style="{StaticResource PasswordBoxStyle}"/>
 
                             <!-- Next button -->
-                            <Button Style="{StaticResource LoginPageButtonsStyle}" Content="Next" HorizontalAlignment="Center" />
+                            <Button Style="{StaticResource LoginPageButtonsStyle}" 
+                                    Content="Next" HorizontalAlignment="Center" 
+                                    Click="Button_Click"/>
                         </StackPanel>
 
                     </Border>
 
                     <Button Style="{StaticResource TextButton}" Content="I already have an account!" HorizontalAlignment="Center"/>
                 </StackPanel>
-            </ScrollViewer>
-        </Grid>
-    </Border>
+            <!--</ScrollViewer>-->
+        <!--</Grid>-->
+    <!--</Border>-->
 </local:BasePage>

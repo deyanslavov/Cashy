@@ -1,5 +1,6 @@
 ﻿namespace Cashy.App
 {
+    using Cashy.App.Animations;
     using System;
     using System.Threading.Tasks;
     using System.Windows;
@@ -26,7 +27,7 @@
         /// <summary>
         /// The time any slide animation takes
         /// </summary>
-        public float SlideSeconds { get; set; } = 0.8f;
+        public float SlideSeconds { get; set; } = 0.4f;
 
         #endregion
 
@@ -56,11 +57,15 @@
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private async void BasePage_Loaded(object sender, System.Windows.RoutedEventArgs e)
+        private async void BasePage_Loaded(object sender, RoutedEventArgs e)
         {
             await AnimateIn();
         }
 
+        /// <summary>
+        /// Animates in this page
+        /// </summary>
+        /// <returns></returns>
         public async Task AnimateIn()
         {
             // Make sure we have something to do
@@ -71,33 +76,34 @@
 
             switch (this.PageLoadAnimation)
             {
-                case PageAnimation.None:
-                    break;
                 case PageAnimation.SlideAndFadeInFromRight:
 
-                    Storyboard sb = new Storyboard();
-                    ThicknessAnimation slideAnimation = new ThicknessAnimation
-                    {
-                        Duration = new Duration(TimeSpan.FromSeconds(this.SlideSeconds)),
-                        From = new Thickness(this.WindowWidth, 0, -this.WindowWidth, 0),
-                        To = new Thickness(0),
-                        DecelerationRatio = 0.9f
-                    };
-
-                    Storyboard.SetTargetProperty(slideAnimation, new PropertyPath("Margin"));
-                    sb.Children.Add(slideAnimation);
-
-                    sb.Begin(this);
-
-                    this.Visibility = Visibility.Visible;
-
-                    await Task.Delay((int)(this.SlideSeconds * 1000));
+                    await this.SlideAndFadeInFromRight(this.SlideSeconds);
 
                     break;
+            }
+        }
+
+        /// <summary>
+        /// Animates out this page
+        /// </summary>
+        /// <returns></returns>
+        public async Task AnimateOut()
+        {
+            // Make sure we have something to do
+            if (this.PageUnloadAnimation == PageAnimation.None)
+            {
+                return;
+            }
+
+            switch (this.PageUnloadAnimation)
+            {
                 case PageAnimation.SlideAndFadeOutToLeft:
+
+                    await this.SlideAndFadeOutToLeft(this.SlideSeconds);
+
                     break;
-                default:
-                    break;
+
             }
         }
 
