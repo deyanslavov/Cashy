@@ -1,17 +1,18 @@
-﻿<local:BasePage x:Class="Cashy.App.LoginPage"
+﻿<local:BasePage x:TypeArguments="local:LoginViewModel"  x:Class="Cashy.App.LoginPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Cashy.App"
+      x:Name="Page"
       mc:Ignorable="d" 
       d:DesignHeight="690" d:DesignWidth="690"
-      Title="LoginPage"> 
+      Title="LoginPage">
 
     <Border>
         <Grid>
 
-             <!-- Main content scroll -->
+            <!-- Main content scroll -->
             <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
                 <StackPanel
                     VerticalAlignment="Center"
@@ -23,7 +24,7 @@
 
                         <StackPanel HorizontalAlignment="Right" Margin="0,0,24,0">
                             <!-- Sing Up header -->
-                            <TextBlock Text="Sing Up"
+                            <TextBlock Text="Sing In"
                                    FontSize="{StaticResource FontSizeLarge}"
                                    FontFamily="{StaticResource LatoRegular}"
                                    Foreground="YellowGreen"/>
@@ -37,15 +38,19 @@
                             <TextBlock/>
 
                             <!-- Email -->
-                            <TextBox Tag="Email" Style="{StaticResource TextBoxPlaceholder}"/>
+                            <TextBox Text="{Binding Email}"
+                                     Tag="Email" 
+                                     Style="{StaticResource TextBoxPlaceholder}"/>
 
                             <!-- Password -->
-                            <PasswordBox Tag="Password" Style="{StaticResource PasswordBoxStyle}"/>
+                            <PasswordBox x:Name="PasswordText"      Tag="Password" Style="{StaticResource PasswordBoxStyle}"/>
 
                             <!-- Next button -->
-                            <Button Style="{StaticResource LoginPageButtonsStyle}" 
+                            <Button local:IsBusyProperty.Value="{Binding LoginIsRunning}"
+                                    Style="{StaticResource LoginPageButtonsStyle}" 
                                     Content="Sign Up" HorizontalAlignment="Center" 
-                                    Click="Button_Click"/>
+                                    Command="{Binding LoginCommand}"
+                                    CommandParameter="{Binding ElementName=Page}"/>
                         </StackPanel>
 
                     </Border>

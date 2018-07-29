@@ -4,8 +4,10 @@
 
 
     <ResourceDictionary.MergedDictionaries>
+        <!-- Order is important -->
         <ResourceDictionary Source="Colors.xaml"/>
         <ResourceDictionary Source="Fonts.xaml"/>
+        <ResourceDictionary Source="Texts.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <!-- Hoverless button -->
@@ -29,7 +31,7 @@
         <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True"/>
         <Setter Property="Padding" Value="10"/>
     </Style>
-    
+
     <!-- Window control button-->
     <Style TargetType="{x:Type Button}" x:Key="WindowControlButton" BasedOn="{StaticResource BaseStyle}">
         <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True"/>
@@ -43,7 +45,7 @@
                 <ScaleTransform ScaleX="1.5"/>
             </Setter.Value>
         </Setter>
-        
+
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -60,7 +62,7 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-    
+
     <!-- Window close button -->
     <Style TargetType="{x:Type Button}" x:Key="WindowCloseButton" BasedOn="{StaticResource WindowControlButton}">
         <Style.Triggers>
@@ -80,7 +82,9 @@
         <Setter Property="FontFamily" Value="{StaticResource LatoRegular}"/>
         <Setter Property="Padding" Value="50 10"/>
         <Setter Property="Margin" Value="0 20"/>
-        
+
+        <Setter Property="local:IsBusyProperty.Value" Value="False"/>
+
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ButtonBase}">
@@ -90,13 +94,20 @@
                             BorderThickness="{TemplateBinding BorderThickness}" 
                             Background="{TemplateBinding Background}" 
                             SnapsToDevicePixels="True">
-                        <TextBlock Text ="{TemplateBinding Content}"  
+                        <Grid>
+                            <TextBlock Text ="{TemplateBinding Content}"  
+                                   Visibility="{TemplateBinding local:IsBusyProperty.Value, Converter={local:BooleanToVisibilityValueConverter}}"
                                    Focusable="False"
                                    FontFamily="{TemplateBinding FontFamily}"
                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
                                    Margin="{TemplateBinding Padding}" 
                                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            <TextBlock Style="{StaticResource SpinningText}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                Visibility="{TemplateBinding local:IsBusyProperty.Value, Converter={local:BooleanToVisibilityValueConverter}, ConverterParameter=True}"/>
+                        </Grid>
                     </Border>
                     <ControlTemplate.Triggers>
                         <EventTrigger RoutedEvent="MouseEnter">
@@ -133,7 +144,7 @@
     <!-- Text button -->
     <Style x:Key="TextButton" TargetType="{x:Type Button}" BasedOn="{StaticResource BaseStyle}">
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{StaticResource BackgroundLightBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource CashyLightGreenBrush}"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}"/>
         <Setter Property="FontFamily" Value="{StaticResource LatoRegular}"/>
@@ -161,6 +172,7 @@
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="FontFamily" Value="{StaticResource LatoBold}"/>
                             <Setter Property="FontSize" Value="21"/>
+                            <Setter Property="Foreground" Value="Orange"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Background" Value="{StaticResource ForegroundDarkBrush}"/>

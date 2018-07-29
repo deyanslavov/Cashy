@@ -10,8 +10,18 @@
     /// <summary>
     /// A base page for all pages to gain base functionality
     /// </summary>
-    public class BasePage : Page 
+    public class BasePage<VM> : Page 
+        where VM : BaseViewModel, new()
     {
+        #region Private Members
+
+        /// <summary>
+        /// The View Model associated with this page
+        /// </summary>
+        private VM mViewModel;
+
+        #endregion
+
         #region Public Properties
 
         /// <summary>
@@ -28,6 +38,27 @@
         /// The time any slide animation takes
         /// </summary>
         public float SlideSeconds { get; set; } = 0.8f;
+
+        /// <summary>
+        /// The View Model associated with this page
+        /// </summary>
+        public VM ViewModel
+        {
+            get => this.mViewModel;
+            set
+            {
+                // If nothing has changed - return
+                if (this.mViewModel == value)
+                    return;
+
+                // Update the value
+                this.mViewModel = value;
+
+                // Set the data context for this page
+                this.DataContext = this.mViewModel;
+            }
+        }
+
 
         #endregion
 
@@ -46,6 +77,9 @@
 
             // Listen out for the page loading
             this.Loaded += BasePage_Loaded;
+
+            // Create a default view model
+            this.ViewModel = new VM();
         }
 
         #endregion
