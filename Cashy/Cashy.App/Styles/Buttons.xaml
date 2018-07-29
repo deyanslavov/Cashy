@@ -79,7 +79,7 @@
         <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}"/>
         <Setter Property="FontFamily" Value="{StaticResource LatoRegular}"/>
         <Setter Property="Padding" Value="50 10"/>
-        <Setter Property="Margin" Value="0 10"/>
+        <Setter Property="Margin" Value="0 20"/>
         
         <Setter Property="Template">
             <Setter.Value>

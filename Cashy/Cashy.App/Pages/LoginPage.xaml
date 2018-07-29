@@ -8,19 +8,11 @@
       d:DesignHeight="690" d:DesignWidth="690"
       Title="LoginPage"> 
 
-    <!--<Border Background="YellowGreen">-->
-        <!--<Grid>-->
+    <Border>
+        <Grid>
 
-            <!-- Main content scroll -->
-            <!--<ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
-                <ScrollViewer.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-0.313"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </ScrollViewer.RenderTransform>-->
+             <!-- Main content scroll -->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
                 <StackPanel
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center"
@@ -52,7 +44,7 @@
 
                             <!-- Next button -->
                             <Button Style="{StaticResource LoginPageButtonsStyle}" 
-                                    Content="Next" HorizontalAlignment="Center" 
+                                    Content="Sign Up" HorizontalAlignment="Center" 
                                     Click="Button_Click"/>
                         </StackPanel>
 
@@ -60,7 +52,7 @@
 
                     <Button Style="{StaticResource TextButton}" Content="I already have an account!" HorizontalAlignment="Center"/>
                 </StackPanel>
-            <!--</ScrollViewer>-->
-        <!--</Grid>-->
-    <!--</Border>-->
+            </ScrollViewer>
+        </Grid>
+    </Border>
 </local:BasePage>

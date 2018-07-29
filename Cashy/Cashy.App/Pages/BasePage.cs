@@ -27,7 +27,7 @@
         /// <summary>
         /// The time any slide animation takes
         /// </summary>
-        public float SlideSeconds { get; set; } = 0.4f;
+        public float SlideSeconds { get; set; } = 0.8f;
 
         #endregion
 
