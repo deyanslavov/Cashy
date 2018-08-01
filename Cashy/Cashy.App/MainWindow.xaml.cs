@@ -12,6 +12,8 @@
             InitializeComponent();
 
             this.DataContext = new WindowViewModel(this);
+
+            var a = Cashy.Core.Class1.Hello();
         }
     }
 }

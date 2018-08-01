@@ -46,7 +46,7 @@
         {
             // Create commands
             this.LoginCommand = new RelayParameterizedCommand(async (parameter) => await LoginAsync(parameter));
-            this.RegisterCommand = new RelayCommand(async () => await RegisterAsync());
+            this.RegisterCommand = new RelayCommand(async () => await GoToRegisterPageAsync());
         }
 
         #endregion
@@ -72,7 +72,7 @@
         /// </summary>
         /// <param name="parameter">The <see cref="SecureString"/> passed in from the view for the user's password</param>
         /// <returns></returns>
-        public async Task RegisterAsync()
+        public async Task GoToRegisterPageAsync()
         {
             ((WindowViewModel)((MainWindow)Application.Current.MainWindow).DataContext).CurrentPage = ApplicationPage.Register;
             await Task.Delay(1);
