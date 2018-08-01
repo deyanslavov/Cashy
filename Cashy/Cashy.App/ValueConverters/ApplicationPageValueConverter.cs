@@ -18,6 +18,8 @@
             {
                 case ApplicationPage.Login:
                     return new LoginPage();
+                case ApplicationPage.Register:
+                    return new RegisterPage();
                 default:
                     Debugger.Break();
                     return null;

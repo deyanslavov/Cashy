@@ -1,6 +1,7 @@
 ﻿namespace Cashy.App
 {
     using System.Threading.Tasks;
+    using System.Windows;
     using System.Windows.Input;
 
     /// <summary>
@@ -29,6 +30,11 @@
         /// </summary>
         public ICommand LoginCommand { get; set; }
 
+        /// <summary>
+        /// The command to register a new account
+        /// </summary>
+        public ICommand RegisterCommand { get; set; }
+
         #endregion
 
         #region Constructor
@@ -39,7 +45,8 @@
         public LoginViewModel()
         {
             // Create commands
-            this.LoginCommand = new RelayParameterizedCommand(async (parameter) => await Login(parameter));
+            this.LoginCommand = new RelayParameterizedCommand(async (parameter) => await LoginAsync(parameter));
+            this.RegisterCommand = new RelayCommand(async () => await RegisterAsync());
         }
 
         #endregion
@@ -49,7 +56,7 @@
         /// </summary>
         /// <param name="parameter">The <see cref="SecureString"/> passed in from the view for the user's password</param>
         /// <returns></returns>
-        public async Task Login(object parameter)
+        public async Task LoginAsync(object parameter)
         {
             await this.RunCommand(() => this.LoginIsRunning, async () => 
             {
@@ -58,6 +65,17 @@
                 string email = this.Email;
                 string password = (parameter as IHavePassword).SecurePassword.Unsecure();
             });
+        }
+
+        /// <summary>
+        /// Takes the user to the register page
+        /// </summary>
+        /// <param name="parameter">The <see cref="SecureString"/> passed in from the view for the user's password</param>
+        /// <returns></returns>
+        public async Task RegisterAsync()
+        {
+            ((WindowViewModel)((MainWindow)Application.Current.MainWindow).DataContext).CurrentPage = ApplicationPage.Register;
+            await Task.Delay(1);
         }
     }
 }

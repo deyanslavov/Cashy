@@ -10,5 +10,10 @@
         /// </summary>
         Login,
 
+        /// <summary>
+        /// The register page
+        /// </summary>
+        Register,
+
     }
 }

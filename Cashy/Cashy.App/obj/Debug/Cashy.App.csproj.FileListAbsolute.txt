@@ -50,3 +50,5 @@ E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.App\obj\Debug\Cashy.App.csproj.CoreC
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.App\obj\Debug\Cashy.App.exe
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.App\obj\Debug\Cashy.App.pdb
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.App\obj\Debug\Cashy.App.csprojResolveAssemblyReference.cache
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.App\obj\Debug\Pages\RegisterPage.g.cs
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.App\obj\Debug\Pages\RegisterPage.baml
