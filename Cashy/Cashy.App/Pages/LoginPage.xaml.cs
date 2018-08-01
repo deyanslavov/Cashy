@@ -1,5 +1,6 @@
 ﻿namespace Cashy.App
 {
+    using Cashy.Core;
     using System.Security;
 
     /// <summary>

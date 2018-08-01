@@ -158,7 +158,8 @@
         </Grid.ColumnDefinitions>
         
         <Frame x:Name="MainFrame" 
-               Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}"
+               Content="{Binding ApplicationViewModel.CurrentPage, ElementName=AppWindow, Converter={local:ApplicationPageValueConverter}}"
+               Background="Transparent"
                Grid.ColumnSpan="2" 
                Margin="0,0,-0.4,0"/>
     </Grid>

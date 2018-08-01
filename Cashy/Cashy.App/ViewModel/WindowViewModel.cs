@@ -4,6 +4,7 @@
     using System.Windows;
     using System.Windows.Input;
     using System.Runtime.InteropServices;
+    using Cashy.Core;
 
     /// <summary>
     /// Thew View Model for the custom flat window
@@ -107,12 +108,6 @@
         /// The height of the title bar / caption of the window
         /// </summary>
         public GridLength TitleHeightGridLength => new GridLength(this.TitleHeight + this.ResizeBorder);
-
-
-        /// <summary>
-        /// The current page of the application
-        /// </summary>
-        public ApplicationPage CurrentPage { get; set; }
 
         #endregion
 

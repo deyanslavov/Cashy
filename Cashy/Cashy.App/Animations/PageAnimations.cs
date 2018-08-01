@@ -1,4 +1,4 @@
-﻿namespace Cashy.App.Animations
+﻿namespace Cashy.App
 {
     using System.Windows;
     using System.Threading.Tasks;
@@ -16,7 +16,7 @@
         /// <param name="page">The Page to animate</param>
         /// <param name="seconds">The time the animation will take</param>
         /// <returns></returns>
-        public static async Task SlideAndFadeInFromRight(this Page page, float seconds)
+        public static async Task SlideAndFadeInFromRightAsync(this Page page, float seconds)
         {
             // Create the storyboard
             Storyboard storyboard = new Storyboard();
@@ -43,7 +43,7 @@
         /// <param name="page">The Page to animate</param>
         /// <param name="seconds">The time the animation will take</param>
         /// <returns></returns>
-        public static async Task SlideAndFadeOutToLeft(this Page page, float seconds)
+        public static async Task SlideAndFadeOutToLeftAsync(this Page page, float seconds)
         {
             // Create the storyboard
             Storyboard sb = new Storyboard();

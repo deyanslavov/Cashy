@@ -5,6 +5,7 @@
     using System.Globalization;
 
     using Cashy.App;
+    using Cashy.Core;
 
     /// <summary>
     /// Converts the <see cref="ApplicationPage"/> to actual view/page
