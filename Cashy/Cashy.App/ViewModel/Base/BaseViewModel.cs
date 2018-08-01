@@ -1,10 +1,11 @@
 ﻿namespace Cashy.App
 {
-    using PropertyChanged;
     using System;
     using System.ComponentModel;
     using System.Linq.Expressions;
     using System.Threading.Tasks;
+
+    using PropertyChanged;
 
     /// <summary>
     /// A base view model that fires Property Changed events as needed

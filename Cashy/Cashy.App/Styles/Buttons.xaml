@@ -103,10 +103,11 @@
                                    Margin="{TemplateBinding Padding}" 
                                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            
                             <TextBlock Style="{StaticResource SpinningText}"
-                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
-                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                Visibility="{TemplateBinding local:IsBusyProperty.Value, Converter={local:BooleanToVisibilityValueConverter}, ConverterParameter=True}"/>
+                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                       Visibility="{TemplateBinding local:IsBusyProperty.Value, Converter={local:BooleanToVisibilityValueConverter}, ConverterParameter=True}"/>
                         </Grid>
                     </Border>
                     <ControlTemplate.Triggers>
@@ -171,7 +172,6 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="FontFamily" Value="{StaticResource LatoBold}"/>
-                            <Setter Property="FontSize" Value="21"/>
                             <Setter Property="Foreground" Value="Orange"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">

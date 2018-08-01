@@ -1,10 +1,6 @@
 ﻿namespace Cashy.App
 {
-    using System;
-    using System.Runtime.InteropServices;
-    using System.Security;
     using System.Threading.Tasks;
-    using System.Windows;
     using System.Windows.Input;
 
     /// <summary>
@@ -42,10 +38,8 @@
         /// </summary>
         public LoginViewModel()
         {
-
             // Create commands
             this.LoginCommand = new RelayParameterizedCommand(async (parameter) => await Login(parameter));
-
         }
 
         #endregion

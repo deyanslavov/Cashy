@@ -1,8 +1,8 @@
 ﻿namespace Cashy.App
 {
     using System;
-    using System.Runtime.InteropServices;
     using System.Security;
+    using System.Runtime.InteropServices;
 
     /// <summary>
     /// Helpers for the <see cref="SecureString"/> class

@@ -1,16 +1,15 @@
 ﻿namespace Cashy.App
 {
-    using Cashy.App.Animations;
-    using System;
     using System.Threading.Tasks;
     using System.Windows;
     using System.Windows.Controls;
-    using System.Windows.Media.Animation;
+
+    using Animations;
 
     /// <summary>
     /// A base page for all pages to gain base functionality
     /// </summary>
-    public class BasePage<VM> : Page 
+    public class BasePage<VM> : Page
         where VM : BaseViewModel, new()
     {
         #region Private Members
@@ -72,7 +71,7 @@
             // If we are animating in, hide to begin with
             if (this.PageLoadAnimation != PageAnimation.None)
             {
-                this.Visibility =  Visibility.Collapsed;
+                this.Visibility = Visibility.Collapsed;
             }
 
             // Listen out for the page loading
@@ -112,6 +111,7 @@
             {
                 case PageAnimation.SlideAndFadeInFromRight:
 
+                    // Start the animation
                     await this.SlideAndFadeInFromRight(this.SlideSeconds);
 
                     break;

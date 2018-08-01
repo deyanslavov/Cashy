@@ -1,8 +1,8 @@
 ﻿namespace Cashy.App
 {
     using System;
-    using System.Globalization;
     using System.Windows;
+    using System.Globalization;
 
     /// <summary>
     /// A converter that takes in boolean and returns Visibility

@@ -1,8 +1,8 @@
 ﻿namespace Cashy.App
 {
     using System;
-    using System.Linq.Expressions;
     using System.Reflection;
+    using System.Linq.Expressions;
 
     /// <summary>
     /// A helper for expressions

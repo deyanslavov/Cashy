@@ -1,9 +1,9 @@
 ﻿namespace Cashy.App
 {
     using System;
-    using System.Runtime.InteropServices;
     using System.Windows;
     using System.Windows.Input;
+    using System.Runtime.InteropServices;
 
     /// <summary>
     /// Thew View Model for the custom flat window
@@ -46,7 +46,7 @@
         /// </summary>
         /// 
         public int ResizeBorder { get; set; } = 6;
-        
+
         /// <summary>
         /// The size of the resize border around the window, taking into account the outer margin
         /// </summary>
@@ -75,7 +75,7 @@
         /// <summary>
         /// The margin around the window to allow a drop shadow
         /// </summary>
-        public Thickness OuterMarginSizeThickness =>new Thickness(this.OuterMarginSize);
+        public Thickness OuterMarginSizeThickness => new Thickness(this.OuterMarginSize);
 
         /// <summary>
         /// The radius of the edges of the window

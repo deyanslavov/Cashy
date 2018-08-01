@@ -1,9 +1,9 @@
 ﻿namespace Cashy.App
 {
     using System;
-    using System.Runtime.InteropServices;
     using System.Windows;
     using System.Windows.Interop;
+    using System.Runtime.InteropServices;
 
     /// <summary>
     /// Fixes the issue with Windows of Style <see cref="WindowStyle.None"/> covering the taskbar

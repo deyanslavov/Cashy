@@ -1,8 +1,7 @@
 ﻿namespace Cashy.App.Animations
 {
-    using System;
-    using System.Threading.Tasks;
     using System.Windows;
+    using System.Threading.Tasks;
     using System.Windows.Controls;
     using System.Windows.Media.Animation;
 
@@ -20,16 +19,16 @@
         public static async Task SlideAndFadeInFromRight(this Page page, float seconds)
         {
             // Create the storyboard
-            Storyboard sb = new Storyboard();
+            Storyboard storyboard = new Storyboard();
 
             // Add slide from right animation
-            sb.AddSlideFromRight(seconds, page.WindowWidth);
+            storyboard.AddSlideFromRight(seconds, page.WindowWidth);
 
             // Add fade in animation
-            sb.AddFadeIn(seconds);
+            storyboard.AddFadeIn(seconds);
 
             // Start animating
-            sb.Begin(page);
+            storyboard.Begin(page);
 
             // Make page visible
             page.Visibility = Visibility.Visible;
