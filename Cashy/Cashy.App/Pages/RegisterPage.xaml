@@ -7,8 +7,7 @@
       xmlns:core="clr-namespace:Cashy.Core;assembly=Cashy.Core"
       x:Name="Page"
       mc:Ignorable="d" 
-      d:DesignHeight="690" d:DesignWidth="690"
-      Title="Register">
+      d:DesignHeight="690" d:DesignWidth="690">
 
     <Border>
         <Grid>
@@ -56,13 +55,12 @@
                                          Style="{StaticResource PasswordBoxStyle}"/>
 
                             <!-- Next button -->
-                            <Button Click="Button_Click"
-                                    local:IsBusyProperty.Value="{Binding LoginIsRunning}"
+                            <Button local:IsBusyProperty.Value="{Binding LoginIsRunning}"
                                     Style="{StaticResource LoginPageButtonsStyle}" 
                                     Content="Register" 
                                     HorizontalAlignment="Center" 
-                                    Command="{Binding LoginCommand}"
-                                    CommandParameter="{Binding ElementName=Page}"/>
+                                    Command="{Binding RegisterCommand}"
+                                    CommandParameter="{Binding SecurePassword, ElementName=PasswordText}"/>
                         </StackPanel>
 
                     </Border>

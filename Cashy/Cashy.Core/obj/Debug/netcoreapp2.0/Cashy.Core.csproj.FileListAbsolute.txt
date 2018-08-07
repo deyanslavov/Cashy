@@ -1,9 +1,0 @@
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\netcoreapp2.0\Cashy.Core.deps.json
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\netcoreapp2.0\Cashy.Core.dll
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\netcoreapp2.0\Cashy.Core.pdb
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\netcoreapp2.0\Cashy.Core.csproj.CoreCompileInputs.cache
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\netcoreapp2.0\Cashy.Core.AssemblyInfoInputs.cache
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\netcoreapp2.0\Cashy.Core.AssemblyInfo.cs
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\netcoreapp2.0\Cashy.Core.dll
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\netcoreapp2.0\Cashy.Core.pdb
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\netcoreapp2.0\Cashy.Core.csprojResolveAssemblyReference.cache

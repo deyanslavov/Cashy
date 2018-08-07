@@ -1,9 +1,0 @@
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\net462\Cashy.Core.dll
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\net462\Cashy.Core.pdb
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\net462\Newtonsoft.Json.dll
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\net462\PropertyChanged.dll
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\net462\Cashy.Core.csproj.CoreCompileInputs.cache
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\net462\Cashy.Core.AssemblyInfoInputs.cache
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\net462\Cashy.Core.AssemblyInfo.cs
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\net462\Cashy.Core.dll
-E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\net462\Cashy.Core.pdb
