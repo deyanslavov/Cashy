@@ -406,8 +406,8 @@
 
                 // Set min size
                 var minSize = new Point(mWindow.MinWidth * mMonitorDpi.Value.DpiScaleX, mWindow.MinHeight * mMonitorDpi.Value.DpiScaleX);
-                lMmi.PointMinTrackSize.X = (int)minSize.X + 390;
-                lMmi.PointMinTrackSize.Y = (int)minSize.Y + 390;
+                lMmi.PointMinTrackSize.X = (int)minSize.X;
+                lMmi.PointMinTrackSize.Y = (int)minSize.Y;
 
                 // Now we have the max size, allow the host to tweak as needed
                 Marshal.StructureToPtr(lMmi, lParam, true);

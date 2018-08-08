@@ -35,18 +35,18 @@
         /// <summary>
         /// The smallest width the window can go to
         /// </summary>
-        public double WindowMinimumWidth { get; set; } = 400;
+        public double WindowMinimumWidth { get; set; } = 700;
 
         /// <summary>
         /// The smallest height the window can go to
         /// </summary>
-        public double WindowMinimumHeight { get; set; } = 400;
+        public double WindowMinimumHeight { get; set; } = 700;
 
         /// <summary>
         /// The size of the resize border around the window
         /// </summary>
         /// 
-        public int ResizeBorder { get; set; } = 6;
+        public int ResizeBorder { get; set; } = 3;
 
         /// <summary>
         /// The size of the resize border around the window, taking into account the outer margin
@@ -102,7 +102,7 @@
         /// <summary>
         /// The height of the title bar / caption of the window
         /// </summary>
-        public int TitleHeight { get; set; } = 32;
+        public int TitleHeight { get; set; } = 35;
 
         /// <summary>
         /// The height of the title bar / caption of the window
