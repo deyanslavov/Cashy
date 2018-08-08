@@ -102,7 +102,7 @@
         /// <summary>
         /// The height of the title bar / caption of the window
         /// </summary>
-        public int TitleHeight { get; set; } = 35;
+        public int TitleHeight { get; set; } = 34;
 
         /// <summary>
         /// The height of the title bar / caption of the window

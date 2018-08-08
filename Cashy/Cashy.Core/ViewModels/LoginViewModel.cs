@@ -59,10 +59,13 @@
         {
             await this.RunCommand(() => this.LoginIsRunning, async () =>
             {
-                await Task.Delay(5000);
+                await Task.Delay(2000);
 
-                string email = this.Email;
-                string password = (parameter as IHavePassword).SecurePassword.Unsecure();
+                // Go to chat page
+                IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Main);
+
+                //string email = this.Email;
+                //string password = (parameter as IHavePassword).SecurePassword.Unsecure();
             });
         }
 
@@ -73,7 +76,7 @@
         /// <returns></returns>
         public async Task GoToRegisterPageAsync()
         {
-            IoC.Get<ApplicationViewModel>().CurrentPage = ApplicationPage.Register;
+            IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Register);
 
             await Task.Delay(1);
         }

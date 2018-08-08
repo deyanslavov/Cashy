@@ -1,4 +1,4 @@
-﻿<local:BasePage x:TypeArguments="core:LoginViewModel"  x:Class="Cashy.App.RegisterPage"
+﻿<local:BasePage x:TypeArguments="core:RegisterViewModel"  x:Class="Cashy.App.RegisterPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -55,18 +55,19 @@
                                          Style="{StaticResource PasswordBoxStyle}"/>
 
                             <!-- Next button -->
-                            <Button local:IsBusyProperty.Value="{Binding LoginIsRunning}"
+                            <Button local:IsBusyProperty.Value="{Binding RegisterIsRunning}"
                                     Style="{StaticResource LoginPageButtonsStyle}" 
                                     Content="Register" 
                                     HorizontalAlignment="Center" 
                                     Command="{Binding RegisterCommand}"
-                                    CommandParameter="{Binding SecurePassword, ElementName=PasswordText}"/>
+                                    CommandParameter="{Binding ElementName=Page}"/>
                         </StackPanel>
 
                     </Border>
 
                     <Button Style="{StaticResource TextButton}" 
                             Content="I already have an account!" 
+                            Command="{Binding LoginCommand}"
                             HorizontalAlignment="Center"/>
 
                 </StackPanel>

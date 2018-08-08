@@ -151,13 +151,10 @@
                       CornerRadius="0"/>
     </WindowChrome.WindowChrome>
 
-    <Frame x:Name="MainFrame" 
+    <local:PageHost x:Name="MainFrame" 
            d:DataContext=""
            DataContext="{Binding ApplicationViewModel.CurrentPage, 
                     Source={x:Static local:ViewModelLocator.Instance}, 
                     Converter={local:ApplicationPageValueConverter}}"
-           Content="{Binding}"
-           Background="Transparent"
-           Margin="0,0,-0.4,0"
-           local:NoFrameHistoryProperty.Value="True"/>
+           CurrentPage="{Binding}"/>
 </Window>

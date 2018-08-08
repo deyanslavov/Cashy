@@ -21,6 +21,8 @@
                     return new LoginPage();
                 case ApplicationPage.Register:
                     return new RegisterPage();
+                //case ApplicationPage.Main:
+                //    return new MainPage();
                 default:
                     Debugger.Break();
                     return null;

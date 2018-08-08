@@ -15,5 +15,9 @@
         /// </summary>
         Register,
 
+        /// <summary>
+        /// The main page of the application
+        /// </summary>
+        Main,
     }
 }
