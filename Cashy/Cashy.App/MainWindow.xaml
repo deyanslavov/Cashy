@@ -12,7 +12,7 @@
         Icon="Images/Logo/logo.png"
         MinHeight="{Binding WindowMinimumHeight}"
         MinWidth="{Binding WindowMinimumWidth}"
-        Title="Cashy" Height="690" Width="690">
+        Title="Cashy" Height="700" Width="700">
 
     <Window.Resources>
         <Style TargetType="{x:Type local:MainWindow}">
