@@ -51,7 +51,7 @@
         /// <summary>
         /// The size of the resize border around the window, taking into account the outer margin
         /// </summary>
-        public Thickness ResizeBorderThickness => new Thickness(this.ResizeBorder + this.OuterMarginSize);
+        public Thickness ResizeBorderThickness => new Thickness(this.ResizeBorder);
 
         /// <summary>
         /// The padding of the inner content of the main window
