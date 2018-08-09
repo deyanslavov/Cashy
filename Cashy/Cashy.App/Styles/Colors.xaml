@@ -36,5 +36,13 @@
     <Color x:Key="CashyRed">#ff0033</Color>
     <SolidColorBrush x:Key="CashyRedBrush" Color="{StaticResource CashyRed}"/>
 
+    <Color x:Key="CashyMildBlue">#a9e0fc</Color>
+    <SolidColorBrush x:Key="CashyMildBlueBrush" Color="{StaticResource CashyMildBlue}"/>
+
+    <Color x:Key="CashyVeryLightGreen">#d0ffce</Color>
+    <SolidColorBrush x:Key="CashyVeryLightGreenBrush" Color="{StaticResource CashyVeryLightGreen}"/>
+
+    <Color x:Key="CashyDirtyGreen">#c6f2c4</Color>
+    <SolidColorBrush x:Key="CashyDirtyGreenBrush" Color="{StaticResource CashyDirtyGreen}"/>
 
 </ResourceDictionary>

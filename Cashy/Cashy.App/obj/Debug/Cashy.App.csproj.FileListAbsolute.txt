@@ -2,11 +2,13 @@ E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\Cashy.App.exe.co
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\Cashy.App.exe
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\Cashy.App.pdb
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\Cashy.Core.dll
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\FontAwesome.WPF.dll
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\Microsoft.Windows.Shell.dll
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\Newtonsoft.Json.dll
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\PropertyChanged.dll
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\Ninject.dll
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\Cashy.Core.pdb
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\FontAwesome.WPF.xml
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\Microsoft.Windows.Shell.pdb
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\Newtonsoft.Json.xml
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\bin\Debug\PropertyChanged.xml
