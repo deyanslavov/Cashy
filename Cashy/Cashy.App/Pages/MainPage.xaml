@@ -5,7 +5,6 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Cashy.App"
       xmlns:core="clr-namespace:Cashy.Core;assembly=Cashy.Core"
-      xmlns:fa="http://schemas.fontawesome.io/icons/"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="700"
       Title="MainPage">
@@ -41,24 +40,42 @@
             <Label x:Name="DateLabel"
                    Grid.Column="1"
                    Grid.Row="0"
-                   Content="Hello"
+                   FontSize="25"
+                   Foreground="DarkGreen"
+                   FontWeight="ExtraBold"
+                   Content="{Binding DateTimeNow}"
                    HorizontalAlignment="Center"
-                   VerticalAlignment="Top"/>
+                   VerticalAlignment="Top"
+                   />
 
-            <Label 
-                   Grid.Column="1"
-                   Grid.Row="1"
-                   Content="Helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"/>
+            <!-- User's current balance -->
+            <StackPanel Grid.Row="1"
+                        Grid.Column="1"
+                        Margin="0 40 0 0"
+                        >
+                <Label x:Name="BalanceText"
+                   Content="Balance:"
+                   Style="{StaticResource MainPageLabel}"/>
 
-            <Label 
-                   Grid.Column="1"
-                   Grid.Row="2"
-                   Content="Hello"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"/>
+                <Label x:Name="Balance"
+                   Content="{Binding Balance}"
+                   Style="{StaticResource MainPageLabel}"/>
+            </StackPanel>
 
+            <ListView x:Name="Records"
+                Grid.Row="2"
+                      Grid.Column="1"
+                      ItemsSource="{Binding}"
+                      Width="500">
+                <ListView.View>
+                    <GridView>
+                        <GridView.Columns>
+                            <GridViewColumn Header="Category" DisplayMemberBinding="{Binding Path=Category}"/>
+                            <GridViewColumn Header="Amount" DisplayMemberBinding="{Binding Path=Amount}"/>
+                        </GridView.Columns>
+                    </GridView>
+                </ListView.View>
+            </ListView>
 
             <!-- Right side menu button -->
             <Button x:Name="RightSideMenuButton"
