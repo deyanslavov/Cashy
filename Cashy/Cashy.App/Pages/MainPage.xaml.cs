@@ -13,16 +13,6 @@
         public MainPage()
         {
             InitializeComponent();
-            this.Records.DataContext = new List<Record>()
-            {
-                new Record{Category = "Health", Amount = 123.12M},
-                new Record{Category = "Health", Amount = 123.12M},
-                new Record{Category = "Health", Amount = 123.12M},
-                new Record{Category = "Health", Amount = 123.12M},
-                new Record{Category = "Health", Amount = 123.12M},
-                new Record{Category = "Health", Amount = 123.12M},
-                new Record{Category = "Health", Amount = 123.12M},
-            };
         }
     }
 }

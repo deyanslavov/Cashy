@@ -45,4 +45,7 @@
     <Color x:Key="CashyDirtyGreen">#c6f2c4</Color>
     <SolidColorBrush x:Key="CashyDirtyGreenBrush" Color="{StaticResource CashyDirtyGreen}"/>
 
+    <Color x:Key="CashyLightYellow">#06fbff93</Color>
+    <SolidColorBrush x:Key="CashyLightYellowBrush" Color="{StaticResource CashyLightYellow}"/>
+
 </ResourceDictionary>

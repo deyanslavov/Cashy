@@ -183,15 +183,13 @@
     
     <!-- Side menu button-->
     <Style x:Key="SideMenuButtonsStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource BaseStyle}">
-        <Setter Property="Background" Value="{StaticResource CashyVeryLightGreenBrush}"/>
-        <Setter Property="Foreground" Value="{StaticResource CashyMildBlueBrush}" />
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundDarkBrush}" />
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}"/>
         <Setter Property="FontFamily" Value="{StaticResource FontAwesome}"/>
         <Setter Property="Width" Value="55"/>
         <Setter Property="Height" Value="55"/>
-
-        <Setter Property="local:IsBusyProperty.Value" Value="False"/>
 
         <Setter Property="Template">
             <Setter.Value>
@@ -205,7 +203,6 @@
                         <Grid>
                             <TextBlock x:Name="block"
                                        Text ="{TemplateBinding Content}"  
-                                       Visibility="{TemplateBinding local:IsBusyProperty.Value, Converter=          {local:BooleanToVisibilityValueConverter}}"
                                        Focusable="False"
                                        FontFamily="{TemplateBinding FontFamily}"
                                        HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
@@ -228,7 +225,7 @@
                         <EventTrigger RoutedEvent="MouseLeave">
                             <BeginStoryboard>
                                 <Storyboard>
-                                    <ColorAnimation To="{StaticResource CashyVeryLightGreen}" 
+                                    <ColorAnimation To="Transparent" 
                                                     Duration="0:0:0.3" 
                                                     Storyboard.TargetName="border"
                                                     Storyboard.TargetProperty="Background.Color"/>

@@ -144,7 +144,7 @@
     </Style>
     
     <!-- Main page labels -->
-    <Style x:Key="MainPageLabel" TargetType="{x:Type Label}" BasedOn="{StaticResource BaseStyle}">
+    <Style x:Key="MainPageText" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
         <Setter Property="FontSize" Value="18"/>
         <Setter Property="FontFamily" Value="{StaticResource LatoBold}"/>
         <Setter Property="Foreground" Value="DarkGreen"/>

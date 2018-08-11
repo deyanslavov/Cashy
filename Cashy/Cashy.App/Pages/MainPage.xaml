@@ -11,7 +11,8 @@
 
     <Border BorderBrush="Transparent" 
             BorderThickness="1">
-        <Grid Background="AliceBlue">
+        <Grid Background="AliceBlue"
+              DataContext="{x:Static core:MainPageDesignModel.Instance}">
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -53,25 +54,28 @@
                         Grid.Column="1"
                         Margin="0 40 0 0"
                         >
-                <Label x:Name="BalanceText"
-                   Content="Balance:"
-                   Style="{StaticResource MainPageLabel}"/>
+                
+                <TextBlock x:Name="BalanceText"
+                   Text="Balance:"
+                           Style="{StaticResource MainPageText}"/>
 
-                <Label x:Name="Balance"
-                   Content="{Binding Balance}"
-                   Style="{StaticResource MainPageLabel}"/>
+               
+                <TextBlock x:Name="Balance"
+                           Style="{StaticResource MainPageText}">
+                    <Run Text="{Binding Currency}"/>
+                    <Run Text="{Binding Balance}"/>
+                </TextBlock>
             </StackPanel>
 
             <ListView x:Name="Records"
                 Grid.Row="2"
                       Grid.Column="1"
-                      ItemsSource="{Binding}"
                       Width="500">
                 <ListView.View>
                     <GridView>
                         <GridView.Columns>
-                            <GridViewColumn Header="Category" DisplayMemberBinding="{Binding Path=Category}"/>
-                            <GridViewColumn Header="Amount" DisplayMemberBinding="{Binding Path=Amount}"/>
+                            <GridViewColumn Header="Category"/>
+                            <GridViewColumn Header="Amount"/>
                         </GridView.Columns>
                     </GridView>
                 </ListView.View>
