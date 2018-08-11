@@ -27,5 +27,5 @@
     <system:Double x:Key="FontSizeSmall">14</system:Double>
     <system:Double x:Key="FontSizeLarge">30</system:Double>
 
-    <system:String x:Key="RightSideMenuIcon">&#xf03a;</system:String>
+    <system:String x:Key="RightSideMenuIcon">&#xf0c9;</system:String>
 </ResourceDictionary>
