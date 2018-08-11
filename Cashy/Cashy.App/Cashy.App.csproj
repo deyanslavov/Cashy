@@ -81,6 +81,9 @@
     <Compile Include="Controls\PageHost.xaml.cs">
       <DependentUpon>PageHost.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\SideMenus\RightSideMenu.xaml.cs">
+      <DependentUpon>RightSideMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\SideMenus\LeftSideMenu.xaml.cs">
       <DependentUpon>LeftSideMenu.xaml</DependentUpon>
     </Compile>
@@ -104,6 +107,10 @@
     <Page Include="Controls\PageHost.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SideMenus\RightSideMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Controls\SideMenus\LeftSideMenu.xaml">
       <SubType>Designer</SubType>

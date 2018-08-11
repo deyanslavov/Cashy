@@ -32,4 +32,6 @@
     <system:String x:Key="AddNewIncomeIcon">&#xf067;</system:String>
     <system:String x:Key="AddNewExpenseIcon">&#xf068;</system:String>
     <system:String x:Key="AddNewCategoryIcon">&#xf0ce;</system:String>
+    <system:String x:Key="SettingsIcon">&#xf013;</system:String>
+    <system:String x:Key="LogoutIcon">&#xf011;</system:String>
 </ResourceDictionary>

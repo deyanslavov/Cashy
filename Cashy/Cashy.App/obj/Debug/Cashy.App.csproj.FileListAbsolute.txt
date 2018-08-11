@@ -39,3 +39,5 @@ E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\obj\Debug\Cashy.App.exe
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\obj\Debug\Cashy.App.pdb
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\obj\Debug\Controls\SideMenus\LeftSideMenu.g.cs
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\obj\Debug\Controls\SideMenus\LeftSideMenu.baml
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\obj\Debug\Controls\SideMenus\RightSideMenu.g.cs
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\obj\Debug\Controls\SideMenus\RightSideMenu.baml
