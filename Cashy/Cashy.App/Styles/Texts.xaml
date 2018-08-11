@@ -143,12 +143,12 @@
         </Style.Triggers>
     </Style>
     
-    <!-- Main page labels -->
+    <!-- Main page text -->
     <Style x:Key="MainPageText" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}">
         <Setter Property="FontSize" Value="18"/>
-        <Setter Property="FontFamily" Value="{StaticResource LatoBold}"/>
+        <Setter Property="FontFamily" Value="{StaticResource LatoRegular}"/>
+        <Setter Property="FontWeight" Value="ExtraBlack"/>
         <Setter Property="Foreground" Value="DarkGreen"/>
-        <Setter Property="FontWeight" Value="ExtraBold"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
 

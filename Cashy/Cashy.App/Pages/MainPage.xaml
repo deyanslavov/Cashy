@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Cashy.App"
+      xmlns:system="clr-namespace:System;assembly=mscorlib"
       xmlns:core="clr-namespace:Cashy.Core;assembly=Cashy.Core"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="700"
@@ -23,6 +24,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
@@ -38,44 +40,65 @@
                     Padding="0 2 0 0" 
                     Margin="10 10 0 0"/>
 
-            <Label x:Name="DateLabel"
+            <TextBlock x:Name="DateLabel"
                    Grid.Column="1"
                    Grid.Row="0"
-                   FontSize="25"
-                   Foreground="DarkGreen"
-                   FontWeight="ExtraBold"
-                   Content="{Binding DateTimeNow}"
-                   HorizontalAlignment="Center"
+                   FontSize="17"
+                   Text="{Binding DateTimeNow}"
                    VerticalAlignment="Top"
+                   Style="{StaticResource MainPageText}"
                    />
 
             <!-- User's current balance -->
-            <StackPanel Grid.Row="1"
-                        Grid.Column="1"
-                        Margin="0 40 0 0"
-                        >
-                
-                <TextBlock x:Name="BalanceText"
-                   Text="Balance:"
-                           Style="{StaticResource MainPageText}"/>
 
-               
+            <StackPanel Grid.Row="1"
+                    Grid.Column="1"
+                        Margin="0 10 0 0" 
+                        Background="WhiteSmoke"
+                        Width="150"
+                        >
+
+                <TextBlock x:Name="BalanceText"
+                           Text="Balance:"
+                           Style="{StaticResource MainPageText}"
+                           Foreground="DarkSlateGray"/>
+
+
                 <TextBlock x:Name="Balance"
-                           Style="{StaticResource MainPageText}">
+                           Style="{StaticResource MainPageText}"
+                           Foreground="{Binding Path=BalanceAmount, Converter={local:BalanceToColorConverter}}">
                     <Run Text="{Binding Currency}"/>
-                    <Run Text="{Binding Balance}"/>
+                    <Run Text="{Binding BalanceAmount}"/>
                 </TextBlock>
             </StackPanel>
 
+
+            <Grid Grid.Column="1"
+                  Grid.Row="2">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Choose date:"/>
+
+                <TextBlock Grid.Column="1" 
+                           Text="Filter"
+                           HorizontalAlignment="Right"/>
+            </Grid>
+
             <ListView x:Name="Records"
-                Grid.Row="2"
+                      Grid.Row="3"
                       Grid.Column="1"
                       Width="500">
                 <ListView.View>
-                    <GridView>
+                    <GridView >
                         <GridView.Columns>
-                            <GridViewColumn Header="Category"/>
-                            <GridViewColumn Header="Amount"/>
+                            <GridViewColumn Header="" Width="25"/>
+                            <GridViewColumn Header="Category" Width="150"/>
+                            <GridViewColumn Header="Amount" Width="150"/>
+                            <GridViewColumn Header="Note" Width="169"/>
                         </GridView.Columns>
                     </GridView>
                 </ListView.View>
@@ -83,7 +106,7 @@
 
             <!-- Right side menu button -->
             <Button x:Name="RightSideMenuButton"
-                    Grid.Column="2"
+                    Grid.Column="3"
                     Grid.Row="0"
                     Style="{StaticResource SideMenuButtonsStyle}"
                     Content="{StaticResource RightSideMenuIcon}"

@@ -17,7 +17,7 @@
         /// <summary>
         /// The current balance of the user
         /// </summary>
-        public string Balance { get; set; }
+        public string BalanceAmount { get; set; }
 
         /// <summary>
         /// The currency the user selected

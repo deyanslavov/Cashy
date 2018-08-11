@@ -9,7 +9,7 @@
 
         public MainPageDesignModel()
         {
-            this.Balance = "100.21";
+            this.BalanceAmount = "100.21";
             this.DateTimeNow = DateTime.Now.ToString("ddd d MMM yyyy", CultureInfo.InvariantCulture);
             this.Currency = "$";
         }

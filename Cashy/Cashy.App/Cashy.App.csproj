@@ -92,6 +92,7 @@
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ValueConverters\ApplicationPageValueConverter.cs" />
+    <Compile Include="ValueConverters\BalanceToColorConverter.cs" />
     <Compile Include="ValueConverters\BaseValueConverter.cs" />
     <Compile Include="ValueConverters\BooleanToVisibilityValueConverter.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
