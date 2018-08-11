@@ -29,4 +29,7 @@
 
     <system:String x:Key="RightSideMenuIcon">&#xf0c9;</system:String>
     <system:String x:Key="LeftSideMenuIcon">&#xf0fe;</system:String>
+    <system:String x:Key="AddNewIncomeIcon">&#xf067;</system:String>
+    <system:String x:Key="AddNewExpenseIcon">&#xf068;</system:String>
+    <system:String x:Key="AddNewCategoryIcon">&#xf0ce;</system:String>
 </ResourceDictionary>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.App\App.xaml
-9-1992343341
+10-1836573342
 
-28-12738748
+29650582144
 17-1324957563
-Controls\PageHost.xaml;MainWindow.xaml;Pages\LoginPage.xaml;Pages\MainPage.xaml;Pages\RegisterPage.xaml;Styles\Texts.xaml;Styles\Buttons.xaml;Styles\Colors.xaml;Styles\Fonts.xaml;
+Controls\PageHost.xaml;Controls\SideMenus\LeftSideMenu.xaml;MainWindow.xaml;Pages\LoginPage.xaml;Pages\MainPage.xaml;Pages\RegisterPage.xaml;Styles\Texts.xaml;Styles\Buttons.xaml;Styles\Colors.xaml;Styles\Fonts.xaml;
 
 False
 
