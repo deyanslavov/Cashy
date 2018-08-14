@@ -1,7 +1,5 @@
 ﻿namespace Cashy.Core
 {
-    using System;
-    using System.Threading;
     using System.Threading.Tasks;
     using System.Windows.Input;
 
@@ -26,7 +24,17 @@
         /// The currency the user selected
         /// </summary>
         public string Currency { get; set; }
-        
+
+        /// <summary>
+        /// A flag that indicates if the left side menu is visible or not
+        /// </summary>
+        public bool LeftSideMenuVisible { get; set; }
+
+        /// <summary>
+        /// A flag that indicates if the right side menu is visible or not
+        /// </summary>
+        public bool RightSideMenuVisible { get; set; }
+
         #endregion
 
         #region Commands
@@ -47,22 +55,28 @@
 
         public MainPageViewModel()
         {
-            this.ShowLeftSideMenuCommand = new RelayCommand(async () => await ShowLeftSideMenu());
-            this.ShowRightSideMenuCommand = new RelayCommand(async () => await ShowRightSideMenu());
+            this.ShowLeftSideMenuCommand = new RelayCommand(async () => await ShowLeftSideMenuAsync());
+            this.ShowRightSideMenuCommand = new RelayCommand(async () => await ShowRightSideMenuAsync());
         }
 
         #endregion
 
         #region Command Methods
 
-        private Task ShowRightSideMenu()
+        private async Task ShowRightSideMenuAsync()
         {
-            return null;
+            await Task.Run(() =>
+            {
+                this.RightSideMenuVisible ^= true;
+            });
         }
 
-        private Task ShowLeftSideMenu()
+        private async Task ShowLeftSideMenuAsync()
         {
-            return null;
+            await Task.Run(() =>
+            {
+                this.LeftSideMenuVisible ^= true;
+            });
         }
 
         #endregion

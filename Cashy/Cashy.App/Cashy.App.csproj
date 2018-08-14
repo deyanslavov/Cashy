@@ -72,12 +72,17 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Animations\PageAnimation.cs" />
+    <Compile Include="Animations\FrameworkElementAnimations.cs" />
     <Compile Include="Animations\PageAnimations.cs" />
     <Compile Include="Animations\StoryboardHelpers.cs" />
-    <Compile Include="AttachedProperties\BaseAttachedProperty.cs" />
+    <Compile Include="AttachedProperties\Base\BaseAttachedProperty.cs" />
+    <Compile Include="AttachedProperties\FramewordElementAnimations\AnimateSlideInFromRightProperty.cs" />
+    <Compile Include="AttachedProperties\FramewordElementAnimations\AnimateSlideInFromLeftProperty.cs" />
+    <Compile Include="AttachedProperties\FramewordElementAnimations\Base\AnimateBaseProperty.cs" />
     <Compile Include="AttachedProperties\NoFrameHistoryProperty.cs" />
     <Compile Include="AttachedProperties\ButtonAttachedProperty.cs" />
-    <Compile Include="AttachedProperties\PasswordBoxAttachedProperties.cs" />
+    <Compile Include="AttachedProperties\PasswordBox\HasTextProperty.cs" />
+    <Compile Include="AttachedProperties\PasswordBox\MonitorPasswordProperty.cs" />
     <Compile Include="Controls\PageHost.xaml.cs">
       <DependentUpon>PageHost.xaml</DependentUpon>
     </Compile>

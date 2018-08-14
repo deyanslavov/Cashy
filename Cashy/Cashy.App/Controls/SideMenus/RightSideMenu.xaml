@@ -5,6 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Cashy.App"
              mc:Ignorable="d" 
+             Height="140"
+             Width="80"
              d:DesignHeight="300" d:DesignWidth="300">
 
 
@@ -15,20 +17,20 @@
                     Content="{StaticResource SettingsIcon}"
                     FontSize="{StaticResource FontSizeLarge}"
                     Foreground="DarkSlateGray"
-                    HorizontalAlignment="Left"
+                    HorizontalAlignment="Right"
                     VerticalAlignment="Top"
                     Padding="0 2 0 0" 
-                    Margin="10 10 0 0"/>
+                    Margin="0 10 1 0"/>
 
         <Button
                     Style="{StaticResource SideMenuButtonsStyle}"
                     Content="{StaticResource LogoutIcon}"
                     FontSize="{StaticResource FontSizeLarge}"
                     Foreground="Red"
-                    HorizontalAlignment="Left"
+                    HorizontalAlignment="Right"
                     VerticalAlignment="Top"
                     Padding="0 2 0 0" 
-                    Margin="10 10 0 0"/>
+                    Margin="0 10 1 0"/>
 
     </StackPanel>
 </UserControl>

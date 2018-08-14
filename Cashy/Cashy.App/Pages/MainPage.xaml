@@ -40,19 +40,19 @@
                     Padding="0 2 0 0" 
                     Margin="10 10 0 0"
                     Command="{Binding ShowLeftSideMenuCommand}"/>
-            
+
             <!-- Left side menu -->
             <local:LeftSideMenu
                     Grid.Column="0"
                     Grid.Row="1"
-                    Grid.RowSpan="2"/>
-            
+                    Grid.RowSpan="3"
+                    local:AnimateSlideInFromLeftProperty.Value="{Binding LeftSideMenuVisible}"/>
+
             <!-- Right side menu-->
             <local:RightSideMenu Grid.Column="2"
                                  Grid.Row="1"
                                  Grid.RowSpan="2"
-                                 HorizontalAlignment="Right"
-                                 Margin="0 0 10 0"/>
+                                 local:AnimateSlideInFromRightProperty.Value="{Binding RightSideMenuVisible}"/>
 
 
             <!-- Current date -->
