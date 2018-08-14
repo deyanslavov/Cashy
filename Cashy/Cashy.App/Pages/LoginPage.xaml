@@ -24,20 +24,20 @@
                     <Border Background="{StaticResource ForegroundWhiteBrush}" 
                             CornerRadius="10" 
                             Padding="15 50 15 15" 
-                            Width="330" 
+                            Width="350" 
                             Margin=" 50 50 50 0">
 
                         <StackPanel HorizontalAlignment="Right" 
                                     Margin="0,0,24,0">
                             
-                            <!-- Sing Up header -->
+                            <!-- Sing in header -->
                             <TextBlock Text="Sing In"
                                        FontSize="{StaticResource FontSizeLarge}"
                                        FontFamily="{StaticResource LatoRegular}"
                                        Foreground="YellowGreen"/>
 
-                            <!-- Sign up subtext -->
-                            <TextBlock Text="It's time to track your money"
+                            <!-- Sign in subtext -->
+                            <TextBlock Text="Know where your money goes!"
                                        FontSize="{StaticResource FontSizeRegular}"
                                        FontFamily="{StaticResource LatoRegular}"
                                        Foreground="{StaticResource ForegroundDarkBrush}"
@@ -54,7 +54,7 @@
                                          Tag="Password" 
                                          Style="{StaticResource PasswordBoxStyle}"/>
 
-                            <!-- Next button -->
+                            <!-- Login button -->
                             <Button local:IsBusyProperty.Value="{Binding LoginIsRunning}"
                                     Style="{StaticResource LoginPageButtonsStyle}" 
                                     Content="Login" 

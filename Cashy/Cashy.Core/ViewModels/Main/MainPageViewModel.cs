@@ -1,6 +1,7 @@
 ﻿namespace Cashy.Core
 {
     using System;
+    using System.Threading;
     using System.Threading.Tasks;
     using System.Windows.Input;
 
@@ -56,12 +57,12 @@
 
         private Task ShowRightSideMenu()
         {
-            throw new NotFiniteNumberException();
+            return null;
         }
 
         private Task ShowLeftSideMenu()
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         #endregion
