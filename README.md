@@ -8,6 +8,7 @@
   1. Fody.1.29.2
   2. PropertyChanged.Fody.1.52.1
   3. Microsoft.Windows.Shell.3.0.1.0
+  4. NInject
 ```
 
 ## Contributors
