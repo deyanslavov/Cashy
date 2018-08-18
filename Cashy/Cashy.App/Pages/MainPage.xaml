@@ -39,9 +39,15 @@
                     VerticalAlignment="Top"
                     Padding="0 2 0 0" 
                     Margin="10 10 0 0"
-                    Command="{Binding ShowLeftSideMenuCommand}"/>
+                    Command="{Binding ShowLeftSideMenuCommand}">
 
-            <!-- Left side menu -->
+                <Button.ToolTip>
+                    <ToolTip Content="Add new Income, Expense or Category"/>
+                </Button.ToolTip>
+                
+            </Button>
+
+                <!-- Left side menu -->
             <local:LeftSideMenu
                     Grid.Column="0"
                     Grid.Row="1"

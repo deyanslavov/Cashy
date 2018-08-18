@@ -48,4 +48,18 @@
     <Color x:Key="CashyLightYellow">#06fbff93</Color>
     <SolidColorBrush x:Key="CashyLightYellowBrush" Color="{StaticResource CashyLightYellow}"/>
 
+    <!-- Brush for the Tooltip's background -->
+    <LinearGradientBrush x:Key="TooltipBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientBrush.GradientStops>
+            <GradientStopCollection>
+                <GradientStop Color="#FFF" Offset="0.0"/>
+                <GradientStop Color="#EEE" Offset="1.0"/>
+            </GradientStopCollection>
+        </GradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <!-- Brush for the Tooltip's border -->
+    <SolidColorBrush x:Key="TooltipBorderBrush" Color="#888" />
+    <!-- Brush for the separator between the Tooltip's title and its content  -->
+    <SolidColorBrush x:Key="TooltipTitleSeparatorBrush" Color="#F00" />
+
 </ResourceDictionary>
