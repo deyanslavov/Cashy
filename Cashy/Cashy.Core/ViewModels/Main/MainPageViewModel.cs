@@ -1,5 +1,6 @@
 ﻿namespace Cashy.Core
 {
+    using System;
     using System.Threading.Tasks;
     using System.Windows.Input;
 
@@ -49,6 +50,11 @@
         /// </summary>
         public ICommand ShowRightSideMenuCommand { get; set; }
 
+        /// <summary>
+        /// The command to log the current user out
+        /// </summary>
+        public ICommand LogoutCommand { get; set; }
+
         #endregion
 
         #region Construtor
@@ -57,8 +63,9 @@
         {
             this.ShowLeftSideMenuCommand = new RelayCommand(async () => await ShowLeftSideMenuAsync());
             this.ShowRightSideMenuCommand = new RelayCommand(async () => await ShowRightSideMenuAsync());
+            this.LogoutCommand = new RelayCommand(async () => await LogoutAsync());
         }
-
+        
         #endregion
 
         #region Command Methods
@@ -78,6 +85,11 @@
                 this.LeftSideMenuVisible ^= true;
             });
         }
+        private async Task LogoutAsync()
+        {
+            await Task.Run(() => IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Login));
+        }
+
 
         #endregion
     }

@@ -46,14 +46,16 @@
                     Grid.Column="0"
                     Grid.Row="1"
                     Grid.RowSpan="3"
-                    local:AnimateSlideInFromLeftProperty.Value="{Binding LeftSideMenuVisible}"/>
+                    local:AnimateSlideInFromLeftProperty.Value="{Binding LeftSideMenuVisible}"
+                    Visibility="Hidden"/>
 
             <!-- Right side menu-->
             <local:RightSideMenu Grid.Column="2"
                                  Grid.Row="1"
                                  Grid.RowSpan="2"
                                  local:AnimateSlideInFromRightProperty.Value="{Binding RightSideMenuVisible}"
-                                 HorizontalAlignment="Right"/>
+                                 HorizontalAlignment="Right"
+                                 Visibility="Hidden"/>
 
 
             <!-- Current date -->
