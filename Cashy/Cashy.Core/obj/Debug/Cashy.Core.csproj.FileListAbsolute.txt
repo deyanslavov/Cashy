@@ -8,3 +8,13 @@ E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.Core\obj\Debug\Cashy.Core.cspr
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.Core\obj\Debug\Cashy.Core.csproj.CoreCompileInputs.cache
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.Core\obj\Debug\Cashy.Core.dll
 E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy\Cashy.Core\obj\Debug\Cashy.Core.pdb
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\Cashy.Core.dll
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\Cashy.Core.pdb
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\Ninject.dll
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\PropertyChanged.dll
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\Ninject.xml
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\bin\Debug\PropertyChanged.xml
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\Cashy.Core.csprojResolveAssemblyReference.cache
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\Cashy.Core.csproj.CoreCompileInputs.cache
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\Cashy.Core.dll
+E:\Coding\GitHub\Projects\Cashy\Cashy\Cashy.Core\obj\Debug\Cashy.Core.pdb

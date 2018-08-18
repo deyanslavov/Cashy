@@ -52,7 +52,8 @@
             <local:RightSideMenu Grid.Column="2"
                                  Grid.Row="1"
                                  Grid.RowSpan="2"
-                                 local:AnimateSlideInFromRightProperty.Value="{Binding RightSideMenuVisible}"/>
+                                 local:AnimateSlideInFromRightProperty.Value="{Binding RightSideMenuVisible}"
+                                 HorizontalAlignment="Right"/>
 
 
             <!-- Current date -->
@@ -112,7 +113,7 @@
 
             <!-- Right side menu button -->
             <Button x:Name="RightSideMenuButton"
-                    Grid.Column="3"
+                    Grid.Column="2"
                     Grid.Row="0"
                     Style="{StaticResource SideMenuButtonsStyle}"
                     Content="{StaticResource RightSideMenuIcon}"

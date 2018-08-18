@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Cashy.App"
              mc:Ignorable="d" 
              Height="140"
-             Width="80"
+             Width="75"
              d:DesignHeight="300" d:DesignWidth="300">
 
 
@@ -17,7 +17,7 @@
                     Content="{StaticResource SettingsIcon}"
                     FontSize="{StaticResource FontSizeLarge}"
                     Foreground="DarkSlateGray"
-                    HorizontalAlignment="Right"
+                    HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     Padding="0 2 0 0" 
                     Margin="0 10 1 0"/>
@@ -27,7 +27,7 @@
                     Content="{StaticResource LogoutIcon}"
                     FontSize="{StaticResource FontSizeLarge}"
                     Foreground="Red"
-                    HorizontalAlignment="Right"
+                    HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     Padding="0 2 0 0" 
                     Margin="0 10 1 0"/>
