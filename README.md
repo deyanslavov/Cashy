@@ -13,4 +13,3 @@
 
 ## Contributors
 - Deyan Slavov | [deyanslavov](https://github.com/deyanslavov)
-- Dimitar Vasilev | [kvadrat4o](https://github.com/kvadrat4o)
